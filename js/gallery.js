@@ -90,8 +90,8 @@ container.addEventListener("click", handleClick);
 
 function handleClick(event) {
   event.preventDefault();
-  if (event.target === event.currenTarget) {
-    return;
+  if (!event.target.nodName === "img") {
+    const handleClick = event.target.dataset.source;
   }
 
   const instance = basicLightbox.create(`
